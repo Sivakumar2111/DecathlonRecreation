@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <title>Decathlon Sports India | Buy Sports Products Online</title>
+</head>
+
+<body>
+
+  <div class="covid white-text">
+    <p>
+      COVID-19:
+      <a class="white-text" href="#">Find the answers to our frequently asked questions</a>
+      <span class="covid-close-container"><span class="covid-close-btn"></span></span>
+    </p>
+  </div>
+
+  <header>
+    <span class="left-nav-bar">
+      <div class="side-nav mr-3">
+        <p class="grey-text">
+          <span class="mr-1"><img src="Images\side-nav-btn.svg"></span>
+          ALL<br>SPORTS
+        </p>
+      </div>
+      <div>
+        <img class="logo-nav-bar" src="Images\menu-logo.svg">
+      </div>
+    </span>
+
+    <div class="center-nav-bar mr-3">
+      <input class="lt-grey-bg" type="search" placeholder="Search 70 sports and 5000 products">
+      <img src="Images\menu-search.svg">
+    </div>
+
+    <span class="right-nav-bar">
+      <a class="mr-3 dk-grey-text" href="#">
+        <img src="Images\menu-sign-in.svg">
+        <p>Sign In</p>
+      </a>
+      <a class="mr-3 dk-grey-text" href="#">
+        <img src="Images\menu-store.svg">
+        <p>My Store</p>
+      </a>
+      <a class="mr-3 dk-grey-text" href="#">
+        <img src="Images\menu-support.svg">
+        <p>Support</p>
+      </a>
+      <a class="dk-grey-text" href="#">
+        <img src="Images\menu-cart.svg">
+        <p>Cart</p>
+      </a>
+    </span>
+
+  </header>
+
+  <div class="delivery-location white-text">
+    <p>Delivering to 600118 Chennai</p>
+    <button id="location-model-btn" class="white-text">CHANGE</button>
+  </div>
+
+<div class="model-location fade">
+  <div class="center-model">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="model-body dk-grey-text">
+          <div class="model-body-left ">
+            <h2>LOCATION</h2>
+            <p>Select your location/address to see accurate product delivery date.</p>
+            <img src="Images\model-location-fg.svg" alt="">
+          </div>
+          <div class="model-body-right">
+            <h4>SELECT ADDRESS</h4>
+            <div class="model-body-right-card lt-grey-bg">
+              <p class="mb-1-5">Login to view your saved delivery address</p>
+              <button type="button" class="blue-btn w-100">LOGIN</button>
+            </div>
+            <div class="model-body-right-divider">
+              OR
+            </div>
+            <h4>PINCODE</h4>
+            <div class="model-body-right-card lt-grey-bg">
+              <p class="mb-1-5">Enter a pincode</p>
+              <div style="margin:0 -5px;"class="flex">
+                <div><input  type="text" /></div>
+                <div><button type="button" class="blue-btn" >APPLY</button></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- <div class="pb-3">
+      <div class="carousel-wrapper">
+        <div class="carousel">
+          <img class="carousel-photo initial" src="Images/carousel_img_1.webp">
+          <img class="carousel-photo" src="Images/carousel_img_2.webp">
+          <img class="carousel-photo" src="Images/carousel_img_3.webp">
+          <div class="carousel-button-next"></div>
+          <div class="carousel-button-prev"></div>
+        </div>
+      </div>
+  </div> -->
+
+
+</body>
+
+<script>
+var modal = document.getElementsByClassName("model-location")[0];
+var btn = document.getElementById("location-model-btn");
+var span = document.getElementsByClassName("modal-close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+
+
+</html>
